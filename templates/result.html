@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HematoVision | Prediction Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #e0ecf8, #f7f9fc);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        .result-card {
+            background: white;
+            max-width: 700px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        /* 🔹 Image container */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .image-container img {
+            width: 320px;
+            height: 320px;
+            object-fit: cover;
+            border: 4px solid #2c3e50;
+            border-radius: 10px;
+        }
+
+        .prediction {
+            font-size: 22px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-top: 15px;
+        }
+        .confidence {
+            font-size: 16px;
+            color: #27ae60;
+            margin-top: 5px;
+        }
+        .info {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+        }
+        .disclaimer {
+            margin-top: 25px;
+            font-size: 12px;
+            color: #777;
+        }
+        a {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 10px 20px;
+            text-decoration: none;
+            background: #3498db;
+            color: white;
+            border-radius: 5px;
+        }
+        a:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>HematoVision</h1>
+    <p>Blood Cell Classification Result</p>
+</header>
+
+<main>
+    <div class="result-card">
+        <h2>Analysis Outcome</h2>
+
+        <div class="image-container">
+            <img src="data:image/png;base64,{{ img_data }}" alt="Uploaded Blood Cell Image">
+        </div>
+
+        <div class="prediction">
+            Predicted Cell Type: {{ class_label }}
+        </div>
+
+        <div class="confidence">
+            Confidence Score: {{ confidence }}%
+        </div>
+
+        <div class="info">
+            The prediction is generated using a deep learning model trained with
+            transfer learning techniques on annotated blood cell images.
+            Higher confidence values indicate stronger model certainty.
+        </div>
+
+        <div class="disclaimer">
+            Disclaimer: This application is intended for educational and research purposes only.
+            It should not be used as a sole basis for medical diagnosis.
+        </div>
+
+        <a href="/">Analyze Another Image</a>
+    </div>
+</main>
+
+</body>
+</html>

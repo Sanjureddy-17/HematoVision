@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HematoVision | Blood Cell Classification</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #e0ecf8, #f7f9fc);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+        .container {
+            background: white;
+            max-width: 700px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+        .upload-box {
+            margin-top: 30px;
+            padding: 20px;
+            border: 2px dashed #3498db;
+            border-radius: 8px;
+            text-align: center;
+        }
+        input[type="file"] {
+            margin: 15px 0;
+        }
+        button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 10px 22px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #2980b9;
+        }
+        footer {
+            text-align: center;
+            font-size: 12px;
+            color: #777;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>HematoVision</h1>
+    <p>Advanced Blood Cell Classification Using Transfer Learning</p>
+</header>
+
+<main>
+    <div class="container">
+        <h2>About the Application</h2>
+        <p>
+            HematoVision is an artificial intelligence–based web application designed to
+            classify human blood cells using deep learning and transfer learning techniques.
+            The system analyzes microscopic blood cell images and identifies the cell type
+            with high accuracy.
+        </p>
+
+        <p>
+            By leveraging pre-trained convolutional neural networks, HematoVision reduces
+            manual effort in blood cell analysis and assists healthcare professionals,
+            researchers, and students in understanding blood cell morphology.
+        </p>
+
+        <h2>Upload Blood Cell Image</h2>
+        <p>
+            Please upload a microscopic image of a blood cell. The model will analyze the
+            image and predict whether the cell is an eosinophil, lymphocyte, monocyte,
+            or neutrophil.
+        </p>
+
+        <div class="upload-box">
+            <form method="POST" enctype="multipart/form-data">
+                <input type="file" name="file" accept="image/*" required>
+                <br>
+                <button type="submit">Analyze Image</button>
+            </form>
+        </div>
+    </div>
+</main>
+
+<footer>
+    © 2026 HematoVision | AI-based Medical Image Analysis (Educational Use)
+</footer>
+
+</body>
+</html>
