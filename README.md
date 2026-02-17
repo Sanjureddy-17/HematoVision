@@ -15,6 +15,15 @@ HematoVision is an AI-powered web application designed to classify microscopic b
 
 ---
 
+## Project Demo Videos
+Code Video Demo:
+- https://drive.google.com/file/d/1PYBITrt_gHvEcbtuWeqUxURJwwcCpklq/view?usp=drive_link
+
+Webpage Video Demo:
+- https://drive.google.com/file/d/1vsd9BJdiq-A9_bok2KYxDwBTTgimlSA8/view?usp=drive_link
+
+---
+
 ## 🧠 Blood Cell Classes
 The model classifies blood cell images into the following categories:
 - Eosinophil
