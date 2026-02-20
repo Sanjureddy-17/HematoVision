@@ -22,6 +22,9 @@ Code Video Demo:
 Webpage Video Demo:
 - https://drive.google.com/file/d/1vsd9BJdiq-A9_bok2KYxDwBTTgimlSA8/view?usp=drive_link
 
+Full Project Demo Video:
+- https://drive.google.com/file/d/1CU_nmpSzoyJw90yR9Tao1ZyV7FV9Eozb/view?usp=drive_link
+
 ---
 
 ## 🧠 Blood Cell Classes
