@@ -10,7 +10,7 @@ from werkzeug.utils import secure_filename
 app = Flask(__name__)
 
 # Load model once
-model = load_model("Blood Cell.keras")
+model = load_model("Blood Cell.keras", compile=False)
 
 class_labels = ['eosinophil', 'lymphocyte', 'monocyte', 'neutrophil']
 
